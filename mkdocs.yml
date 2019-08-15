@@ -1,8 +1,9 @@
-site_name: CCBL Tutorials 
+site_name: CCBL Tutorials
 pages:
-    - Basic linux: linux.md
+    - Introduction to Linux: linux.md
     - Git: git.md
     - SSH: ssh.md
     - IDE: ide.md
 theme:
-    name: material
+  name: 'material'
+
