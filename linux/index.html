@@ -233,6 +233,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#references" title="REFERENCES" class="md-nav__link">
+    REFERENCES
+  </a>
+  
+</li>
+      
       
       
       
@@ -339,6 +346,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#references" title="REFERENCES" class="md-nav__link">
+    REFERENCES
+  </a>
+  
+</li>
+      
       
       
       
@@ -375,7 +389,7 @@ It has a very friendly interface that is quite similar to Windows, which allows 
 <h2 id="terminal">TERMINAL</h2>
 <p>The terminal, also known as the shell, is a program that receives specific codes that are typed out by the users and then directs commands that the computer acts on. Normally just by searching the word "terminal" on the computer it's easy to be found.</p>
 <p>Example of a terminal:</p>
-<p><img alt="Example of a terminal" src="http://linuxcommand.org/images/Screenshot-Terminal.png" /></p>
+<p><img alt="Example of a terminal" src="../img/term/screenshotterm.png" /></p>
 <p>Once the terminal is open on your computer, various commands can be executed. The table below describes a few of them:</p>
 <table>
 <thead>
@@ -470,7 +484,38 @@ ls
 <p><strong>WRITE PERMISSION</strong>: A file can be altered, that is, new data can be written upon it. Deleting or renaming the file is only possible if you also have permission through the directory as well.</p>
 </li>
 <li>
-<p><strong>EXECUTE PERMISSION</strong>: </p>
+<p><strong>EXECUTE PERMISSION</strong>: You can run a regular file as a program or a shell script. The execute permission can be opened by the terminal by using the cd command. Although you might have permission to execute the file, you will only be allowed to list it's contents if you have the read permission to the that directory.</p>
+</li>
+</ul>
+<p>To view what type of permissions you have in relation to a particular file, you can run in the terminal the following: <strong>-l ls</strong></p>
+<p>An example of what appears is below:</p>
+<p><img alt="terminal screenshot" src="../img/term/drawing.png" /></p>
+<p>Understanding how to read the symbols corresponding to each file is quite simple since each letter corresponds to a different meaning.The first character can be any of these:</p>
+<ul>
+<li><strong>d</strong> = directory</li>
+<li><strong>–</strong> = regular file</li>
+<li><strong>l</strong> = symbolic link</li>
+<li><strong>s</strong> = Unix domain socket</li>
+<li><strong>p</strong> = named pipe</li>
+<li><strong>c</strong> = character device file</li>
+<li><strong>b</strong> = block device file</li>
+</ul>
+<p>The following nine characters are divided into three groups. That is, the read, write, execute permission for the first three characters corresponds to the <strong>user</strong>. The second group of three shows the permission for the <strong>group</strong> and the last three shows for the <strong>other</strong>. For each group, the first character is the read permission, the second character is ther write permission and the third is execute permission.</p>
+<p>The characters are the following:</p>
+<ul>
+<li><strong>r</strong> = read permission</li>
+<li><strong>w</strong> = write permission</li>
+<li><strong>x</strong> = execute permission</li>
+<li><strong>–</strong> = no permission</li>
+</ul>
+<p>Finally, both the creator and the root user can manage set file permissions by using the command <strong>chmod</strong>. For information on how to do this, access: <a href="https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md">https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md</a> </p>
+<h2 id="references">REFERENCES</h2>
+<ul>
+<li>
+<p><a href="https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml">https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml</a> </p>
+</li>
+<li>
+<p><a href="https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md">https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md</a> </p>
 </li>
 </ul>
                 

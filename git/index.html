@@ -190,9 +190,66 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git
+      </label>
+    
     <a href="./" title="Git" class="md-nav__link md-nav__link--active">
       Git
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-git" title="WHAT IS GIT?" class="md-nav__link">
+    WHAT IS GIT?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" title="GITHUB" class="md-nav__link">
+    GITHUB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-repository" title="CREATING A REPOSITORY" class="md-nav__link">
+    CREATING A REPOSITORY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" title="BRANCHING" class="md-nav__link">
+    BRANCHING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-and-commit-changes" title="MAKE AND COMMIT CHANGES" class="md-nav__link">
+    MAKE AND COMMIT CHANGES
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -238,6 +295,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-git" title="WHAT IS GIT?" class="md-nav__link">
+    WHAT IS GIT?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" title="GITHUB" class="md-nav__link">
+    GITHUB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-repository" title="CREATING A REPOSITORY" class="md-nav__link">
+    CREATING A REPOSITORY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" title="BRANCHING" class="md-nav__link">
+    BRANCHING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-and-commit-changes" title="MAKE AND COMMIT CHANGES" class="md-nav__link">
+    MAKE AND COMMIT CHANGES
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -250,7 +351,41 @@
                 
                 
                 <h1 id="git">GIT</h1>
-<p><strong>Git</strong> is a version <a href="https://en.wikipedia.org/wiki/Git">control tool</a>. </p>
+<h2 id="what-is-git">WHAT IS GIT?</h2>
+<p>Git was created to help during software development by being a <strong><em>distributed version control system</em></strong> so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.</p>
+<h2 id="github">GITHUB</h2>
+<p>Github is a code hosting platform where you can manage your git repositories. It is very simple to start using the platform, all you have to do is create an account on their website: </p>
+<ul>
+<li><a href="https://github.com/">https://github.com/</a></li>
+</ul>
+<h2 id="creating-a-repository">CREATING A REPOSITORY</h2>
+<p>To begin your project, a repository needs to be created. It can contain folders, files, videos, spreadsheets and data sets. Including a README is also recommended so that when sharing your project with others there is information on what exactly it is about.</p>
+<p><strong>1</strong>. Once you're logged in, click on the button "New"</p>
+<p><img alt="frontpage github" src="../img/term/githubfront.png" /></p>
+<p><strong>2</strong>. The page below will appear and you will configure the repository the way you prefer by applying a title, a short description and clicking on "Initialize this repository with a README" before finishing with "Create repository".</p>
+<p><img alt="repository github" src="../img/term/repository.png" /></p>
+<h2 id="branching">BRANCHING</h2>
+<p>Branching is a very useful way to work on different versions of a project at the same time without altering the original version. Once the changes are done, you might want to add these changes to the original and that is possible by pulling in those updates.</p>
+<p><strong>1</strong>. To create a branch is very simple, once you are on the main page of your repository, just click on "Branch:master" and fill out the black space with the new name of the branch.</p>
+<p><img alt="repository github" src="../img/term/branch.png" /></p>
+<p>Another possibility is cloning someone else's repository so that you have the data with you so that changes can be made.</p>
+<p><strong>1</strong>. To do this, enter the repository you wish to clone and click on the button "Clone or download". A small window will open and you will copy the url that appears.</p>
+<p><img alt="clone repository" src="../img/term/Clone.png" /></p>
+<p><strong>2</strong>. Open your terminal and go to the directory that you wish to clone the repository into. Type in git clone and the url you copied above. Press enter and your local clone will be created.</p>
+<p><img alt="clone in terminal" src="../img/term/terminalclone.png" /></p>
+<h2 id="make-and-commit-changes">MAKE AND COMMIT CHANGES</h2>
+<p>Once the files are with you and changes have been made, you might want to commit them and send it to Github. All you have to do is the following:</p>
+<p><strong>1</strong>. Check the status of the repository in relation to what you've changed and what stayed the same by inserting in the terminal "git status"</p>
+<p><img alt="git status" src="../img/term/status.png" /></p>
+<p><strong>2</strong>. To add all the new changes to get ready to update, type in "git add" in the terminal. If you wish all of them to be sent, then type in "git add docs/*". Click status again and it will be possible to see that they have all been added as indicated by the color green</p>
+<p><img alt="git add" src="../img/term/gitadd.png" /></p>
+<p><strong>3</strong>. You can also compare what has changed and what stayed the same by typing in "git diff", as shown below</p>
+<p><img alt="git diff" src="../img/term/gitdiff.png" /></p>
+<p><strong>4</strong>. Preparing to commit is easy, just type in "git commit -a -m "description of choice".</p>
+<p><img alt="git commit" src="../img/term/commit.png" /></p>
+<p><strong>5</strong>. Finish by typing "git push origin master"</p>
+<p><img alt="git push" src="../img/term/gitoriginmaster.png" /></p>
+<p>Then go to the Github website and click on "Open a pull request".</p>
                 
                   
                 
