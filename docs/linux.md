@@ -37,7 +37,7 @@ Once the terminal is open on your computer, various commands can be executed. Th
 
 There are many other commands but these are the most basic ones that will help beginners get a head start. A good exercise would be to start by opening terminal and trying out these commands to get a closer look on what each one does.
 
-###**Examples
+###**Examples**
 
 Go to your terminal and repeat the commands
 
