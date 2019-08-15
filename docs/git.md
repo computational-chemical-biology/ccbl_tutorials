@@ -79,4 +79,21 @@ Once the files are with you and changes have been made, you might want to commit
 
 
 
+**4**. Preparing to commit is easy, just type in "git commit -a -m "description of choice".
+
+
+![git commit](img/term/commit.png)
+
+
+
+**5**. Finish by typing "git push origin master"
+
+
+![git push](img/term/gitoriginmaster.png)
+
+
+
+Then go to the Github website and click on "Open a pull request".
+
+
 
