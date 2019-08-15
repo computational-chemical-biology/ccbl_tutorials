@@ -20,7 +20,7 @@ The terminal, also known as the shell, is a program that receives specific codes
 
 Example of a terminal:
 
-![Example of a terminal](http://linuxcommand.org/images/Screenshot-Terminal.png)
+![Example of a terminal](img/term/screenshotterm.png)
 
 Once the terminal is open on your computer, various commands can be executed. The table below describes a few of them:
 
@@ -87,5 +87,38 @@ There are also three types of access permissions on linux:
 
 -  **WRITE PERMISSION**: A file can be altered, that is, new data can be written upon it. Deleting or renaming the file is only possible if you also have permission through the directory as well.
 
--  **EXECUTE PERMISSION**: 
+-  **EXECUTE PERMISSION**: You can run a regular file as a program or a shell script. The execute permission can be opened by the terminal by using the cd command. Although you might have permission to execute the file, you will only be allowed to list it's contents if you have the read permission to the that directory.
+
+To view what type of permissions you have in relation to a particular file, you can run in the terminal the following: **-l ls**
+
+An example of what appears is below:
+
+![terminal screenshot](img/term/drawing.png)
+
+Understanding how to read the symbols corresponding to each file is quite simple since each letter corresponds to a different meaning.The first character can be any of these:
+
+-  **d** = directory
+-  **–** = regular file
+-  **l** = symbolic link
+-  **s** = Unix domain socket
+-  **p** = named pipe
+-  **c** = character device file
+-  **b** = block device file
+
+The following nine characters are divided into three groups. That is, the read, write, execute permission for the first three characters corresponds to the **user**. The second group of three shows the permission for the **group** and the last three shows for the **other**. For each group, the first character is the read permission, the second character is ther write permission and the third is execute permission.
+
+The characters are the following:
+
+-  **r** = read permission
+-  **w** = write permission
+-  **x** = execute permission
+-  **–** = no permission
+
+Finally, both the creator and the root user can manage set file permissions by using the command **chmod**. For information on how to do this, access: [https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md](https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md) 
+
+##REFERENCES
+
+- [https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml](https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml) 
+ 
+- [https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md](https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md) 
 
