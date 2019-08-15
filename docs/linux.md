@@ -32,10 +32,43 @@ Once the terminal is open on your computer, various commands can be executed. Th
 |touch                | Creates a new file  |
 |rm                   | Removes file        |
 |mkdir                | Creates a new directory|
-|gedit                | Runs program        |
-|history<             | Creates a text containing the code you used on terminal|
+|gedit                | Runs a text editor     |
+|history >            | Creates a text containing the code you used on terminal|
 
 There are many other commands but these are the most basic ones that will help beginners get a head start. A good exercise would be to start by opening terminal and trying out these commands to get a closer look on what each one does.
+
+###**Examples
+
+Go to your terminal and repeat the commands
+
+![command examples](img/term/terminal-1.png)
+
+You can copy and paste the commands from here
+
+```
+ls
+rm test/test.txt
+rmdir test/
+ls
+mkdir test
+ls
+touch test/test.txt
+ls test/
+cd test/
+ls
+cd ..
+ls
+history > test/test.txt
+cat test/test.txt | tail
+ls -lh test/
+chmod +x test/test.txt
+ls -lh test/
+rm test/test.txt
+ls test/
+rmdir test/
+ls
+```
+
 
 ##**UNDERSTANDING FILE PERMISSIONS**
 Another important detail when using linux and sharing the computer with others is understanding how to read if you have permission to access certain files. Learning how to establish who has control over the files you have created is just as important. Even if you happen to be the only user of a computer, this is an efficient method to protect your computer from suffering from particular mistakes that might be harmful.
