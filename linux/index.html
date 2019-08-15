@@ -36,7 +36,7 @@
     
     
       
-        <title>Basic linux - CCBL Tutorials</title>
+        <title>Introduction to Linux - CCBL Tutorials</title>
       
     
     
@@ -75,6 +75,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#general-overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -97,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Basic linux
+                Introduction to Linux
               
             </span>
           
@@ -172,9 +176,57 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="Basic linux" class="md-nav__link md-nav__link--active">
-      Basic linux
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction to Linux
+      </label>
+    
+    <a href="./" title="Introduction to Linux" class="md-nav__link md-nav__link--active">
+      Introduction to Linux
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-overview" title="GENERAL OVERVIEW" class="md-nav__link">
+    GENERAL OVERVIEW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing" title="INSTALLING" class="md-nav__link">
+    INSTALLING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminal" title="TERMINAL" class="md-nav__link">
+    TERMINAL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-file-permissions" title="UNDERSTANDING FILE PERMISSIONS" class="md-nav__link">
+    UNDERSTANDING FILE PERMISSIONS
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -197,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ssh.md" title="SSH" class="md-nav__link">
+    <a href="../ssh/" title="SSH" class="md-nav__link">
       SSH
     </a>
   </li>
@@ -209,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ide.md" title="IDE" class="md-nav__link">
+    <a href="../ide/" title="IDE" class="md-nav__link">
       IDE
     </a>
   </li>
@@ -222,15 +274,152 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-overview" title="GENERAL OVERVIEW" class="md-nav__link">
+    GENERAL OVERVIEW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing" title="INSTALLING" class="md-nav__link">
+    INSTALLING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminal" title="TERMINAL" class="md-nav__link">
+    TERMINAL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-file-permissions" title="UNDERSTANDING FILE PERMISSIONS" class="md-nav__link">
+    UNDERSTANDING FILE PERMISSIONS
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Basic linux</h1>
+                  <h1>Introduction to Linux</h1>
                 
-                
+                <h2 id="general-overview">GENERAL OVERVIEW</h2>
+<p>Linux is an operating system that is very popular amongst the scientific community due to it's clarity and compatibility with other hardwares. All these characteristics, in addition to having many functional tools that make data analysis easier, makes it an ideal system to be used research-wise.
+It has a very friendly interface that is quite similar to Windows, which allows the user to use it even without any prior knowledge in how terminal commands work. Albeit being so easy-to-use, the major focus here will be in providing a simple introduction on how Linux works, specifically in relation to the fundamentals on how to get simple tasks done, such as creating a file, through the terminal.</p>
+<h2 id="installing">INSTALLING</h2>
+<p>It is possible to have Linux on your computer as the only operating system or have it work alongside Windows (dual boot).The easiest way to install Linux on your computer is by creating a Live CD (or pen drive) and, in this way, the installation process occurs quite smoothly. There are many tutorials online which describe it step-by-step and a suggestion would be to follow the instructions described by the link below to learn how to create a Live Pen Drive:</p>
+<ul>
+<li><a href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0">https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0</a></li>
+</ul>
+<p>After succesfully creating the Live Pen Drive, you will need to boot it and make the necessary configurations. Switching back to Windows is quite easy by turning off the computer and removing the Pen Drive.</p>
+<p>Although easy to install, a Live Pen Drive is limited in relation to the amount of space necessary for certain files. This can make it very slow and inefficient. A solution would be to have a visualization software and have Linux work as a virtual machine on Windows. A popular and free software is VirtualBox, which can be found in the link below (be sure to check if the download corresponds to Windows users if that is the case):</p>
+<ul>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+</ul>
+<p>If a visualization software is being used, it is necessary to get used to the fact that the host will always be considered your physical computer and the guest, your virtual machine. With this concept in mind, the next step is to install the guest operating system. Once this is done, you are ready to learn the basics of command line in Terminal!</p>
+<h2 id="terminal">TERMINAL</h2>
+<p>The terminal, also known as the shell, is a program that receives specific codes that are typed out by the users and then directs commands that the computer acts on. Normally just by searching the word "terminal" on the computer it's easy to be found.</p>
+<p>Example of a terminal:</p>
+<p><img alt="Example of a terminal" src="http://linuxcommand.org/images/Screenshot-Terminal.png" /></p>
+<p>Once the terminal is open on your computer, various commands can be executed. The table below describes a few of them:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Command</strong></th>
+<th align="center"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ls</td>
+<td align="center">Lists arquives</td>
+</tr>
+<tr>
+<td align="center">cd</td>
+<td align="center">Changes directory</td>
+</tr>
+<tr>
+<td align="center">cd ..</td>
+<td align="center">Return to previous directory</td>
+</tr>
+<tr>
+<td align="center">touch</td>
+<td align="center">Creates a new file</td>
+</tr>
+<tr>
+<td align="center">rm</td>
+<td align="center">Removes file</td>
+</tr>
+<tr>
+<td align="center">mkdir</td>
+<td align="center">Creates a new directory</td>
+</tr>
+<tr>
+<td align="center">gedit</td>
+<td align="center">Runs program</td>
+</tr>
+<tr>
+<td align="center">history&lt;</td>
+<td align="center">Creates a text containing the code you used on terminal</td>
+</tr>
+</tbody>
+</table>
+<p>There are many other commands but these are the most basic ones that will help beginners get a head start. A good exercise would be to start by opening terminal and trying out these commands to get a closer look on what each one does.</p>
+<h2 id="understanding-file-permissions"><strong>UNDERSTANDING FILE PERMISSIONS</strong></h2>
+<p>Another important detail when using linux and sharing the computer with others is understanding how to read if you have permission to access certain files. Learning how to establish who has control over the files you have created is just as important. Even if you happen to be the only user of a computer, this is an efficient method to protect your computer from suffering from particular mistakes that might be harmful.</p>
+<p>File permissions are defined differently by each of the following:</p>
+<ul>
+<li>
+<p><strong>USER</strong>: The person that runs the file. The general rule is that whoever created the file is therefore it's user.</p>
+</li>
+<li>
+<p><strong>GROUP</strong>: All the users that belong to the same usergroup will have the same type of access permission towards a file. This is useful so that many people can contribute to the same file but configurations have to be made accordingly to make sure it works.</p>
+</li>
+<li>
+<p><strong>OTHER</strong>: A person who is neither the owner of the file or participant of the same group the file does.</p>
+</li>
+</ul>
+<p>There are also three types of access permissions on linux:</p>
+<ul>
+<li>
+<p><strong>READ PERMISSION</strong>: When talking about a file, it can be open and read. In relation to the directory, it's contents can be listed.</p>
+</li>
+<li>
+<p><strong>WRITE PERMISSION</strong>: A file can be altered, that is, new data can be written upon it. Deleting or renaming the file is only possible if you also have permission through the directory as well.</p>
+</li>
+<li>
+<p><strong>EXECUTE PERMISSION</strong>: </p>
+</li>
+</ul>
                 
                   
                 
