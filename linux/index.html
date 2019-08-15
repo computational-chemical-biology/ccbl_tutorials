@@ -211,6 +211,19 @@
     TERMINAL
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="**Examples" class="md-nav__link">
+    **Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -304,6 +317,19 @@
     TERMINAL
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="**Examples" class="md-nav__link">
+    **Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -385,15 +411,42 @@ It has a very friendly interface that is quite similar to Windows, which allows 
 </tr>
 <tr>
 <td align="center">gedit</td>
-<td align="center">Runs program</td>
+<td align="center">Runs a text editor</td>
 </tr>
 <tr>
-<td align="center">history&lt;</td>
+<td align="center">history &gt;</td>
 <td align="center">Creates a text containing the code you used on terminal</td>
 </tr>
 </tbody>
 </table>
 <p>There are many other commands but these are the most basic ones that will help beginners get a head start. A good exercise would be to start by opening terminal and trying out these commands to get a closer look on what each one does.</p>
+<h3 id="examples">**Examples</h3>
+<p>Go to your terminal and repeat the commands</p>
+<p><img alt="command examples" src="../img/term/terminal-1.png" /></p>
+<p>You can copy and paste the commands from here</p>
+<pre><code>ls
+rm test/test.txt
+rmdir test/
+ls
+mkdir test
+ls
+touch test/test.txt
+ls test/
+cd test/
+ls
+cd ..
+ls
+history &gt; test/test.txt
+cat test/test.txt | tail
+ls -lh test/
+chmod +x test/test.txt
+ls -lh test/
+rm test/test.txt
+ls test/
+rmdir test/
+ls
+</code></pre>
+
 <h2 id="understanding-file-permissions"><strong>UNDERSTANDING FILE PERMISSIONS</strong></h2>
 <p>Another important detail when using linux and sharing the computer with others is understanding how to read if you have permission to access certain files. Learning how to establish who has control over the files you have created is just as important. Even if you happen to be the only user of a computer, this is an efficient method to protect your computer from suffering from particular mistakes that might be harmful.</p>
 <p>File permissions are defined differently by each of the following:</p>
