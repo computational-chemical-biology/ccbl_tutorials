@@ -75,6 +75,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#what-is-ssh" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -196,9 +200,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        SSH
+      </label>
+    
     <a href="./" title="SSH" class="md-nav__link md-nav__link--active">
       SSH
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-ssh" title="WHAT IS SSH?" class="md-nav__link">
+    WHAT IS SSH?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-aliases" title="SHELL ALIASES" class="md-nav__link">
+    SHELL ALIASES
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -222,6 +260,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-ssh" title="WHAT IS SSH?" class="md-nav__link">
+    WHAT IS SSH?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-aliases" title="SHELL ALIASES" class="md-nav__link">
+    SHELL ALIASES
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -230,7 +304,30 @@
                 
                   <h1>SSH</h1>
                 
-                
+                <h2 id="what-is-ssh">WHAT IS SSH?</h2>
+<p>SSH (Secure shell) is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. Administrators normally use it to manage systems and applications remotely. They can log into another computer over a network, execute commands and move files from one computer to the other.
+If you log in and out of many remote servers on a daily basis, surely it is troubling to remember all the usernames, remote addresses and command lines. Therefore, a SSH configuration file will simplify your life by allowing you to create shell aliases.</p>
+<h2 id="shell-aliases">SHELL ALIASES</h2>
+<p><strong>1</strong>. After configuring your computer to recognize another server by inserting the ip address, you  have to open your terminal and enter the command "ssh -p 2222 UserName@SSHserver.example.com", as shown below. The password also needs to be inserted after pressing enter. </p>
+<p><strong>Obs.</strong> -p 2222 is an example of an SSH port </p>
+<p><strong>2</strong>. Enter the server again by typing in "ssh -p 2222 UserName@SSHserver.example.com" again and enter "sh-keygen" to generate the access key.</p>
+<p><strong>3</strong>. Move the file where the key was created to the Desktop being aware of using the correct ip address. Be sure to be in the exact file where the key was generated for this to work. In this case, the key was generated inside the ssh folder and being moved to the Desktop.</p>
+<p><strong>4</strong>. Go back to your host computer and create a config file containing the following information as exampled below:</p>
+<ul>
+<li>Host hostName </li>
+<li>Hostname 127.0.0.1 </li>
+<li>Port 22</li>
+<li>User UserName </li>
+<li>IdentityFile ~/.ssh/id_rsa_server.pub</li>
+</ul>
+<p>First, once inside the .ssh/, create the file by typing in "touch config", then type in "nano config" so that you can insert the information shown above.</p>
+<p><strong>5</strong>. Move the key you saved on the desktop to the ssh./ folder and rename it the same way you named the information exampled in step 5. Which is, in this case, hostName. By typing in "ls" afterwards, you can check whether the file is truly there.</p>
+<p><strong>6</strong>. Finally, it is done! You no longer have to type in the full SSH port with the server address to access remotely.</p>
+<p><strong>7</strong>. But now you also want to be able to access it without the need of a password. To do this, enter the server.</p>
+<p><strong>8</strong>. Go to ssh and create the file "authorized_keys"</p>
+<p><strong>9</strong>. Meanwhile, open another tab and go to your home server and generate a key by typing in "ssh-keygen". Afterwards, type in "less" so that you can see the entire key. Then copy the key to the destination server by typing in "scp id_rsa.pub hostName:/home/ana", for example.</p>
+<p><strong>10</strong>. Go back to your server (into your home page) and change the name of id_rsa.pub to authorized_keys by typing in "mv id_rsa.pub authorized_keys". Move authorized_keys to the ssh file by typing "mv authorized_keys .ssh".</p>
+<p>There! Now you can enter your server without needing the password or typing in the full SSH port with the server address.</p>
                 
                   
                 
