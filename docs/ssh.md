@@ -25,18 +25,18 @@ If you log in and out of many remote servers on a daily basis, surely it is trou
 
 **4**. Go back to your host computer and create a config file containing the following information as exampled below:
 
--  Host bororo
--      Hostname 200.144.245.3
--      Port 2222
--      User debian
--      IdentityFile ~/.ssh/bororo.rsa
+-  Host hostName 
+-      Hostname 127.0.0.1 
+-      Port 22
+-      User UserName 
+-      IdentityFile ~/.ssh/id_rsa_server.pub
 
 First, once inside the .ssh/, create the file by typing in "touch config", then type in "nano config" so that you can insert the information shown above.
 
 
 
 
-**5**. Move the key you saved on the desktop to the ssh./ folder and rename it the same way you named the information exampled in step 5. Which is, in this case, bororo. By typing in "ls" afterwards, you can check whether the file is truly there.
+**5**. Move the key you saved on the desktop to the ssh./ folder and rename it the same way you named the information exampled in step 5. Which is, in this case, hostName. By typing in "ls" afterwards, you can check whether the file is truly there.
 
 
 
@@ -54,7 +54,7 @@ First, once inside the .ssh/, create the file by typing in "touch config", then 
 
 
 
-**9**. Meanwhile, open another tab and go to your home server and generate a key by typing in "ssh-keygen". Afterwards, type in "less" so that you can see the entire key. Then copy the key to the destination server by typing in "scp id_rsa.pub bororo:/home/ana", for example.
+**9**. Meanwhile, open another tab and go to your home server and generate a key by typing in "ssh-keygen". Afterwards, type in "less" so that you can see the entire key. Then copy the key to the destination server by typing in "scp id_rsa.pub hostName:/home/ana", for example.
 
 
 
