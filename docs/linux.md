@@ -32,6 +32,7 @@ Once the terminal is open on your computer, various commands can be executed. Th
 |touch                | Creates a new file  |
 |rm                   | Removes file        |
 |mkdir                | Creates a new directory|
+|rmdir                | Removes directory 
 |gedit                | Runs a text editor     |
 |history >            | Creates a text containing the code you used on terminal|
 
