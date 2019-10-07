@@ -1,6 +1,14 @@
 ## WHAT IS SSH?
+
 SSH (Secure shell) is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. Administrators normally use it to manage systems and applications remotely. They can log into another computer over a network, execute commands and move files from one computer to the other.
 If you log in and out of many remote servers on a daily basis, surely it is troubling to remember all the usernames, remote addresses and command lines. Therefore, a SSH configuration file will simplify your life by allowing you to create shell aliases.
+
+##LOGGING WITH A PASSWORD
+
+Having a username registered in the server you want to access, you can use the following command in the terminal to log in:
+ssh "UserName@ip" or ssh "UserName@SSHserver.example.com"
+Then it will be asked your password. 
+
 
 ##SHELL ALIASES
 
