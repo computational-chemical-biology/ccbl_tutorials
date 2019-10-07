@@ -22,6 +22,12 @@ To begin your project, a repository needs to be created. It can contain folders,
 
 ![repository github](img/term/repository.png)
 
+##CONNECTING 
+To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
+git config --global user.email "you@example.com"  (Use the email you registered on GitHub)
+git config --global user.name "Your Name" (The username you chose for your GitHub account)
+
+After connecting, when pushing your commits to the repository you will simply log in through your GitHub username and password through the terminal!
 
 ##BRANCHING
 
