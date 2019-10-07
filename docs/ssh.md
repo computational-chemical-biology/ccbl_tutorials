@@ -4,7 +4,7 @@ If you log in and out of many remote servers on a daily basis, surely it is trou
 
 ##SHELL ALIASES
 
-**1**. After configuring your computer to recognize another server by inserting the ip address, you  have to open your terminal and enter the command "ssh -p 2222 UserName@SSHserver.example.com", as shown below. The password also needs to be inserted after pressing enter. 
+**1**. After configuring your computer to recognize another server by inserting the ip address, you  have to open your terminal and enter the command "ssh -p 2222 UserName@SSHserver.example.com". The password also needs to be inserted after pressing enter. 
 
 **Obs.** -p 2222 is an example of an SSH port 
 
