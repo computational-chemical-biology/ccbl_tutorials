@@ -86,14 +86,14 @@ Once the files are with you and changes have been made, you might want to commit
 
 
 
-**5**. Finish by typing "git push origin master"
+**5**. Finish by typing "git push origin master"; It will be asked for you to login into your GitHub account.
 
 
 ![git push](img/term/gitoriginmaster.png)
 
 
 
-Then go to the Github website and click on "Open a pull request".
+Then go to the Github website and click on "Open a pull request". Then, your pull request will be revised before being merged into the original file.
 
 
 
