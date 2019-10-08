@@ -22,6 +22,17 @@ To begin your project, a repository needs to be created. It can contain folders,
 
 ![repository github](img/term/repository.png)
 
+##CONNECTING 
+To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
+
+ ```git config --global user.email "you@example.com"  (Use the email you registered on GitHub)
+ ```
+  
+ ```git config --global user.name "Your Name" (The username you chose for your GitHub account)
+ ```
+ 
+
+After connecting, when pushing your commits to the repository you will simply log in through your GitHub username and password through the terminal!
 
 ##BRANCHING
 
@@ -86,14 +97,14 @@ Once the files are with you and changes have been made, you might want to commit
 
 
 
-**5**. Finish by typing "git push origin master"
+**5**. Finish by typing "git push origin master"; It will be asked for you to login into your GitHub account.
 
 
 ![git push](img/term/gitoriginmaster.png)
 
 
 
-Then go to the Github website and click on "Open a pull request".
+Then go to the Github website and click on "Open a pull request". Then, your pull request will be revised before being merged into the original file.
 
 
 
