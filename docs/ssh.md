@@ -6,7 +6,11 @@ If you log in and out of many remote servers on a daily basis, surely it is trou
 ##LOGGING WITH A PASSWORD
 
 Having a username registered in the server you want to access, you can use the following command in the terminal to log in:
-ssh "UserName@ip" or ssh "UserName@SSHserver.example.com"
+
+ ```ssh "UserName@ip" or ssh "UserName@SSHserver.example.com" 
+ ```
+
+
 Then it will be asked your password. 
 
 
