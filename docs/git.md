@@ -4,7 +4,7 @@
 Git was created to help during software development by being a ***distributed version control system*** so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.
 
 ##GITHUB
-Github is a code hosting platform where you can manage your git repositories. It is very simple to start using the platform, all you have to do is create an account on their website: 
+Github is a code hosting platform where you can manage your git repositories. It allows you to work on collaborative projects with developers around the world. To start using the plataform, all you have to do is create an account on their website: 
 
 - [https://github.com/](https://github.com/)
 
@@ -104,7 +104,22 @@ Once the files are with you and changes have been made, you might want to commit
 
 
 
-Then go to the Github website and click on "Open a pull request". Then, your pull request will be revised before being merged into the original file.
+Then go to the Github website to submit your changes by clicking on "Open a pull request". 
+
+##OPEN A PULL REQUEST
+When you want to submit your edits, you can open a pull request that will propose your changes to the master branch. To open a pull request, you have to follow these steps:
+
+**1**. Navigate to the repository and find the branch menu
+
+**2**. From the branch menu, select the branch that contains your work
+
+**3**. Click "New pull request" next to the menu branch
+
+**4**. Enter the title and descripton of the pull request 
+
+**5**. Click the "Create pull request" button
+
+Done! Now your changes will be reviewed by the repository contributors that can accept or deny the
 
 
 
