@@ -120,7 +120,7 @@ When you want to submit your edits, you can open a pull request that will propos
 
 **5**. Click the "Create pull request" button
 
-Done! Now your changes will be reviewed by the repository contributors that can accept or deny the
+Done! Now your changes will be reviewed by the repository contributors that can accept or deny the request.
 
 
 
