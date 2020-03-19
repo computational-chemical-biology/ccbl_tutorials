@@ -107,6 +107,7 @@ Once the files are with you and changes have been made, you might want to commit
 Then go to the Github website to submit your changes by clicking on "Open a pull request". 
 
 ##OPEN A PULL REQUEST
+
 When you want to submit your edits, you can open a pull request that will propose your changes to the master branch. To open a pull request, you have to follow these steps:
 
 **1**. Navigate to the repository and find the branch menu
