@@ -7,11 +7,13 @@ It is possible to have Linux on your computer as the only operating system or ha
 
 - [https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0)
 
+
 After succesfully creating the Live Pen Drive, you will need to boot it and make the necessary configurations. Switching back to Windows is quite easy by turning off the computer and removing the Pen Drive.
 
-Although easy to install, a Live Pen Drive is limited in relation to the amount of space necessary for certain files. This can make it very slow and inefficient. A solution would be to have a visualization software and have Linux work as a virtual machine on Windows. A popular and free software is VirtualBox, which can be found in the link below (be sure to check if the download corresponds to Windows users if that is the case):
+Although easy to install, a Live Pen Drive is limited in relation to the amount of space necessary for certain files. This can make it very slow and inefficient. A solution would be to have a visualization software and have Linux work as a virtual machine on Windows. There are some options that are popular and free like VirtualBox or VMware Workstation Player, which can be found in the link below (be sure to check if the download corresponds to Windows users if that is the case):
 
 - [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+- [https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0](https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0)
 
 If a visualization software is being used, it is necessary to get used to the fact that the host will always be considered your physical computer and the guest, your virtual machine. With this concept in mind, the next step is to install the guest operating system. Once this is done, you are ready to learn the basics of command line in Terminal!
 
