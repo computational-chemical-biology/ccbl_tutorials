@@ -1,14 +1,14 @@
 # GIT
 
-##WHAT IS GIT?
-Git was created to help during software development by being a ***distributed version control system*** so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.
+### WHAT IS GIT?
+Git was created to help during software development by being a **_distributed version control system_** so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.
 
-##GITHUB
+### GITHUB
 Github is a code hosting platform where you can manage your git repositories. It allows you to work on collaborative projects with developers around the world. To start using the plataform, all you have to do is create an account on their website: 
 
 - [https://github.com/](https://github.com/)
 
-##CREATING A REPOSITORY
+### CREATING A REPOSITORY
 To begin your project, a repository needs to be created. It can contain folders, files, videos, spreadsheets and data sets. Including a README is also recommended so that when sharing your project with others there is information on what exactly it is about.
 
 **1**. Once you're logged in, click on the button "New"
@@ -22,7 +22,7 @@ To begin your project, a repository needs to be created. It can contain folders,
 
 ![repository github](img/term/repository.png)
 
-##CONNECTING 
+### CONNECTING 
 To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
 
  ```git config --global user.email "you@example.com"  (Use the email you registered on GitHub)
@@ -34,7 +34,7 @@ To work in your repository files directly from your terminal, first you must con
 
 After connecting, when pushing your commits to the repository you will simply log in through your GitHub username and password through the terminal!
 
-##BRANCHING
+### BRANCHING
 
 Branching is a very useful way to work on different versions of a project at the same time without altering the original version. Once the changes are done, you might want to add these changes to the original and that is possible by pulling in those updates.
 
@@ -61,7 +61,7 @@ Another possibility is cloning someone else's repository so that you have the da
 ![clone in terminal](img/term/terminalclone.png)
 
 
-##MAKE AND COMMIT CHANGES
+### MAKE AND COMMIT CHANGES
 Once the files are with you and changes have been made, you might want to commit them and send it to Github. All you have to do is the following:
 
 **1**. Check the status of the repository in relation to what you've changed and what stayed the same by inserting in the terminal "git status"
@@ -107,25 +107,25 @@ Once the files are with you and changes have been made, you might want to commit
 Then go to the Github website to submit your changes by clicking on "Open a pull request".
 
 
-##OPEN A PULL REQUEST
+### OPEN A PULL REQUEST
 
 When you want to submit your edits, you can open a pull request that will propose your changes to the master branch. To open a pull request, you have to follow these steps:
 
-1. Navigate to the repository and find the branch menu
+**1.** Navigate to the repository and find the branch menu
 
-2. From the branch menu, select the branch that contains your work
+**2.** From the branch menu, select the branch that contains your work
 
-3. Click "New pull request" next to the menu branch
+**3.** Click "New pull request" next to the menu branch
 
-4. Enter the title and descripton of the pull request
+**4.** Enter the title and descripton of the pull request
 
-5. Click the "Create pull request" button
+**5.** Click the "Create pull request" button
 
 Done! Now your changes will be reviewed by the repository contributors that can accept or deny the request.
 
 
 
-##REFERENCES
+### REFERENCES
 
 
 - [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/)
