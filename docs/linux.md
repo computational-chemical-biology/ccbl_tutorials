@@ -1,5 +1,5 @@
 ##GENERAL OVERVIEW
-Linux is an operating system that is very popular amongst the scientific community due to it's clarity and compatibility with other hardwares. All these characteristics, in addition to having many functional tools that make data analysis easier, makes it an ideal system to be used research-wise.
+Linux is an **operating system** that is very popular amongst the *scientific community* due to it's clarity and compatibility with other hardwares. All these characteristics, in addition to having many functional tools that make data analysis easier, makes it an ideal system to be used research-wise.
 It has a very friendly interface that is quite similar to Windows, which allows the user to use it even without any prior knowledge in how terminal commands work. Albeit being so easy-to-use, the major focus here will be in providing a simple introduction on how Linux works, specifically in relation to the fundamentals on how to get simple tasks done, such as creating a file, through the terminal.
 
 ##INSTALLING
