@@ -1,6 +1,6 @@
 ## WHAT IS SSH?
 
-SSH (Secure shell) is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. Administrators normally use it to manage systems and applications remotely. They can log into another computer over a network, execute commands and move files from one computer to the other.
+SSH (Secure shell) is a **network protocol** that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. Administrators normally use it to manage systems and applications remotely. They can log into another computer over a network, execute commands and move files from one computer to the other.
 If you log in and out of many remote servers on a daily basis, surely it is troubling to remember all the usernames, remote addresses and command lines. Therefore, a SSH configuration file will simplify your life by allowing you to create shell aliases.
 
 ##LOGGING WITH A PASSWORD

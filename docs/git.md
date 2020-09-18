@@ -1,7 +1,7 @@
 # GIT
 
 ### WHAT IS GIT?
-Git was created to help during software development by being a **_distributed version control system_** so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.
+Git was created to help during software development by being a **distributed version control system** so that tracking code modifications is possible. This makes things easier when collaborating with different groups of people  because noticing where the changes happened is very efficient.
 
 ### GITHUB
 Github is a code hosting platform where you can manage your git repositories. It allows you to work on collaborative projects with developers around the world. To start using the plataform, all you have to do is create an account on their website: 
@@ -22,15 +22,27 @@ To begin your project, a repository needs to be created. It can contain folders,
 
 ![repository github](img/term/repository.png)
 
+### FORKING
+Creating a “fork” is producing a personal copy of someone else’s project. 
+To fork a repository, access the repository of interest and click on the "fork" icon, located in the upper right corner of the page. 
+
+Done! The repository files are now available in your [gihub account.](https://github.com/) 
+
+To download the fork files to computer: 
+**1.** Access your created fork, click on the green "Code" icon and copy the generated link. 
+**2.** At the terminal, type: "git clone <generated_link>" and a copy of the fork will be available. 
+
 ### CONNECTING 
 To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
 
  ```git config --global user.email "you@example.com"  (Use the email you registered on GitHub)
+
  ```
-  
+
  ```git config --global user.name "Your Name" (The username you chose for your GitHub account)
+
  ```
- 
+
 
 After connecting, when pushing your commits to the repository you will simply log in through your GitHub username and password through the terminal!
 
