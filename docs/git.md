@@ -36,11 +36,9 @@ To download the fork files to computer:
 To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
 
  ```git config --global user.email "you@example.com"  (Use the email you registered on GitHub)
-
  ```
 
  ```git config --global user.name "Your Name" (The username you chose for your GitHub account)
-
  ```
 
 
