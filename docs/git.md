@@ -26,11 +26,11 @@ To begin your project, a repository needs to be created. It can contain folders,
 Creating a “fork” is producing a personal copy of someone else’s project. 
 To fork a repository, access the repository of interest and click on the "fork" icon, located in the upper right corner of the page. 
 
-Done! The repository files are now available in your [gihub account.](https://github.com/) 
+Done! The repository files are now available in your [gihub account.](https://github.com/)   
 
-To download the fork files to computer: 
-**1.** Access your created fork, click on the green "Code" icon and copy the generated link. 
-**2.** At the terminal, type: "git clone <generated_link>" and a copy of the fork will be available. 
+To download the fork files to computer:   
+**1.** Access your created fork, click on the green "Code" icon and copy the generated link.   
+**2.** At the terminal, type: "git clone <generated_link>" and a copy of the fork will be available.   
 
 ### CONNECTING 
 To work in your repository files directly from your terminal, first you must connect your GitHub account, configurating it through the following command:
