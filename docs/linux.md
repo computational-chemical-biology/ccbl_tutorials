@@ -15,8 +15,18 @@ Although easy to install, a Live Pen Drive is limited in relation to the amount 
 
 If a visualization software is being used, it is necessary to get used to the fact that the host will always be considered your physical computer and the guest, your virtual machine. With this concept in mind, the next step is to install the guest operating system. Once this is done, you are ready to learn the basics of command line in Terminal!
 
+**Notes:** before any installation, find out if your computer supports a dualboot or a virtual machine. Usually, you will nedd to know:
+
+* Does the computer have enough RAM memory?
+ * RAM is a type of technology that allows acess to files stored on the computer. It's basically what will determine what your computer will be able to run well on. Unlike HD memory, RAM does not store content permanently, as it works as a short-term data storage, because after the task is done, files are removed from memory and kept on the HD.
+
+* Does the computer have an HD and/or SSD?
+ * The main difference between the two data storage technologies are: HDs which support large volumes and SSDs which are faster. So having an SSD can make your computer work better and faster.
+
 ## TERMINAL
 The terminal, also known as the shell, is a program that receives specific codes that are typed out by the users and then directs commands that the computer acts on. Normally just by searching the word "terminal" on the computer it's easy to be found.
+
+To open the terminal on your computer press the keys **_Ctrl_**, **_Alt_** and **_T_**, all at the same time. After that the terminal will appear on your screen, as shown below.
 
 Example of a terminal:
 
