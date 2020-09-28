@@ -1,8 +1,8 @@
-##GENERAL OVERVIEW
+## GENERAL OVERVIEW
 Linux is an operating system that is very popular amongst the scientific community due to it's clarity and compatibility with other hardwares. All these characteristics, in addition to having many functional tools that make data analysis easier, makes it an ideal system to be used research-wise.
 It has a very friendly interface that is quite similar to Windows, which allows the user to use it even without any prior knowledge in how terminal commands work. Albeit being so easy-to-use, the major focus here will be in providing a simple introduction on how Linux works, specifically in relation to the fundamentals on how to get simple tasks done, such as creating a file, through the terminal.
 
-##INSTALLING
+## INSTALLING
 It is possible to have Linux on your computer as the only operating system or have it work alongside Windows (dual boot).The easiest way to install Linux on your computer is by creating a Live CD (or pen drive) and, in this way, the installation process occurs quite smoothly. There are many tutorials online which describe it step-by-step and a suggestion would be to follow the instructions described by the link below to learn how to create a Live Pen Drive:
 
 - [https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0)
@@ -38,7 +38,7 @@ Once the terminal is open on your computer, various commands can be executed. Th
 
 There are many other commands but these are the most basic ones that will help beginners get a head start. A good exercise would be to start by opening terminal and trying out these commands to get a closer look on what each one does.
 
-###**Examples**
+### **Examples**
 
 Go to your terminal and repeat the commands
 
@@ -71,7 +71,7 @@ ls
 ```
 
 
-##**UNDERSTANDING FILE PERMISSIONS**
+## **UNDERSTANDING FILE PERMISSIONS**
 Another important detail when using linux and sharing the computer with others is understanding how to read if you have permission to access certain files. Learning how to establish who has control over the files you have created is just as important. Even if you happen to be the only user of a computer, this is an efficient method to protect your computer from suffering from particular mistakes that might be harmful.
 
 File permissions are defined differently by each of the following:
@@ -117,9 +117,9 @@ The characters are the following:
 
 Finally, both the creator and the root user can manage set file permissions by using the command **chmod**. For information on how to do this, access: [https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md](https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md) 
 
-##REFERENCES
+## REFERENCES
 
 - [https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml](https://www.cenapad.unicamp.br/servicos/treinamentos/linux.shtml) 
- 
+
 - [https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md](https://raw.githubusercontent.com/anaclccoelho/ccbl_tutorials/master/docs/linux.md) 
 
