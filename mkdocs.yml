@@ -4,6 +4,7 @@ pages:
     - Git: git.md
     - SSH: ssh.md
     - IDE: ide.md
+    - Kill zombie processes: zombie.md
 theme:
   name: 'material'
 
