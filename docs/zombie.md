@@ -8,7 +8,7 @@ The first step to connect to the server is to open the linux terminal or the com
 ssh user@seriema.fcfrp.usp.br 
 
 ```
-![Example of command prompt](img/term/cmd.jpeg)
+![Example of command prompt](img/term/cmd.png)
 
 Then type your password and press enter.
 
