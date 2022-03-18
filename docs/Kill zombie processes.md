@@ -17,6 +17,9 @@ On the server use the `top` command to see a list of running processes.
 ```
 top
 ```
+
+![Top command](img/term/top.png)
+
 **zombie processes**
 
 Now you can see who is online and the process ID (pid) running. Sometimes a few remain open even after the task is done, so it is necessary to close them to avoid RAM overuse. To find the zombies press `ctrl+c` to exit top and in the terminal type the following combination of comands on terminal:
@@ -25,6 +28,8 @@ Now you can see who is online and the process ID (pid) running. Sometimes a few 
 ps aux | grep Z
 ```
 It returns a list of processes that you must kill
+
+![Zombie list](img/term/zombie.png)
 
 Then type the `kill` command followed by the `number of the process` you want to terminate:
 
