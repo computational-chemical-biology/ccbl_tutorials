@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../git/">
+        <link rel="prev" href="../zombie/">
       
-      
-        <link rel="next" href="../ide/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>SSH - CCBL Tutorials</title>
+        <title>Slurm basics - CCBL Tutorials</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-ssh" class="md-skip">
+        <a href="#how-to-acess-aguia4-cluster" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SSH
+              Slurm basics
             
           </span>
         </div>
@@ -228,28 +226,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    SSH
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ssh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -258,51 +238,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-ssh" class="md-nav__link">
-    <span class="md-ellipsis">
-      WHAT IS SSH?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logging-with-a-password" class="md-nav__link">
-    <span class="md-ellipsis">
-      LOGGING WITH A PASSWORD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shell-aliases" class="md-nav__link">
-    <span class="md-ellipsis">
-      SHELL ALIASES
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -351,10 +286,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hcp_aguia4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Slurm basics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -363,6 +318,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#login-and-acess" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login and Acess:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reminders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-how-cores-cpus-are-allocated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining How Cores (CPUs) Are Allocated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chain-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain Jobs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules and Recommendations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -384,6 +422,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -392,27 +432,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-ssh" class="md-nav__link">
+  <a href="#login-and-acess" class="md-nav__link">
     <span class="md-ellipsis">
-      WHAT IS SSH?
+      Login and Acess:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#logging-with-a-password" class="md-nav__link">
+  <a href="#utilities" class="md-nav__link">
     <span class="md-ellipsis">
-      LOGGING WITH A PASSWORD
+      Utilities
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#shell-aliases" class="md-nav__link">
+  <a href="#job-template" class="md-nav__link">
     <span class="md-ellipsis">
-      SHELL ALIASES
+      Job Template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reminders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-how-cores-cpus-are-allocated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining How Cores (CPUs) Are Allocated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chain-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain Jobs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules-and-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules and Recommendations
     </span>
   </a>
   
@@ -433,36 +509,101 @@
                   
 
 
-  <h1>SSH</h1>
+<h1 id="how-to-acess-aguia4-cluster">How to acess aguia4 cluster</h1>
+<h2 id="login-and-acess">Login and Acess:</h2>
+<pre><code class="language-markdown">- SSH: ssh USP_ID@shark.hpc.usp.br
+- Password: USP_ID password
+- shark ssh aguia4
 
-<h2 id="what-is-ssh">WHAT IS SSH?</h2>
-<p>SSH (Secure shell) is a <strong>network protocol</strong> that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. It provides strong authentication and encrypted data communications between two computers connecting over an open network such as the internet. Administrators normally use it to manage systems and applications remotely. They can log into another computer over a network, execute commands and move files from one computer to the other.
-If you log in and out of many remote servers on a daily basis, surely it is troubling to remember all the usernames, remote addresses and command lines. Therefore, a SSH configuration file will simplify your life by allowing you to create shell aliases.</p>
-<h2 id="logging-with-a-password">LOGGING WITH A PASSWORD</h2>
-<p>Having a username registered in the server you want to access, you can use the following command in the terminal to log in:</p>
-<p><code>ssh "UserName@ip" or ssh "UserName@SSHserver.example.com"</code></p>
-<p>Then it will be asked your password. </p>
-<h2 id="shell-aliases">SHELL ALIASES</h2>
-<p><strong>1</strong>. After configuring your computer to recognize another server by inserting the ip address, you  have to open your terminal and enter the command "ssh -p 2222 UserName@SSHserver.example.com". The password also needs to be inserted after pressing enter. </p>
-<p><strong>Obs.</strong> -p 2222 is an example of an SSH port </p>
-<p><strong>2</strong>. Enter the server again by typing in "ssh -p 2222 UserName@SSHserver.example.com" again and enter "sh-keygen" to generate the access key.</p>
-<p><strong>3</strong>. Move the file where the key was created to the Desktop being aware of using the correct ip address. Be sure to be in the exact file where the key was generated for this to work. In this case, the key was generated inside the ssh folder and being moved to the Desktop.</p>
-<p><strong>4</strong>. Go back to your host computer and create a config file containing the following information as exampled below:</p>
+</code></pre>
+<h2 id="utilities">Utilities</h2>
+<pre><code class="language-markdown">- sbatch namejob.sh            : Puts `namejob.sh` in the queue
+- scancel job_id               : Cancels the job
+- squeue --user=nnnn           : Displays the jobs of user `nnnn`
+- scontrol show jobid &lt;jobid&gt;  : Shows information about the job with identification `&lt;jobid&gt;`
+- module avail                 : Lists the installed programs
+</code></pre>
+<p>For more: <a href="https://slurm.schedmd.com/pdfs/summary.pdf">slurm workload manager</a></p>
+<p><strong>Pay attention!</strong>: Don't use your directory for permanent data storage. After transferring your files, remove them from your directory.</p>
+<hr />
+<h2 id="job-template">Job Template</h2>
+<p>To allow Slurm to allocate more than one job on the same server, use the following job template.</p>
+<pre><code class="language-markdown">#!/bin/bash 
+
+#SBATCH --partition=SP2
+#SBATCH --ntasks=1            : Number of tasks / MPI processes
+#SBATCH --cpus-per-task=1      : Number of threads OpenMP per process
+#SBATCH -J aloca-1-cpu
+#SBATCH --time=01:02:00        : In case of you don't specify, the default limit is 8 hours. The maximum limit is 192 hours.
+#SBATCH --mem-per-cpu=24042     :24 GB of RAM per CPU. Maximum of 480,000 for all CPUs.
+
+#### OpenMP Settings:
+
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OMP_PLACES=threads
+export OMP_PROC_BIND=spread
+echo $SLURM_JOB_ID        : ID of job allocation
+echo $SLURM_SUBMIT_DIR    : Directory job where was submitted
+echo $SLURM_JOB_NODELIST  : File containing allocated hostnames
+echo $SLURM_NTASKS        : Total number of cores for job
+
+#### Load modules:
+module avail : Lists the installed programs
+module load NOME_MODULE
+
+#### Run the application:
+srun YOUR_EXECUTEFILE_WITH_PARAMETERS_AND_FLAGS
+
+</code></pre>
+<p>Examples: </p>
+<pre><code class="language-markdown">- more modelo_job-gaussian.sh
+- more modelo_job.sh
+</code></pre>
+<h2 id="reminders">Reminders</h2>
+<p>It is essential to specify the required time in a consistent and appropriate manner</p>
+<p>If each CPU will use more than 24 GB use in the job header</p>
+<pre><code class="language-markdown">#SBATCH --mem VALUE
+</code></pre>
+<p>Use</p>
+<pre><code class="language-markdown">srun
+</code></pre>
+<p>to run the program within the job script submitted by sbatch.</p>
+<hr />
+<h2 id="defining-how-cores-cpus-are-allocated">Defining How Cores (CPUs) Are Allocated</h2>
+<p>Examples for 16 cores:</p>
+<pre><code class="language-markdown">--ntasks=16 : Using MPI, without worrying about core distribution
+and to allocate 16 independent processes (without communication)
+
+--ntasks=16 --ntasks-per-node=1 or --ntasks=16 --nodes=16 : To allocate 16 cores distributed across different nodes
+
+--ntasks=16 --nodes=16 --exclusive : To allocate 16 cores distributed across different nodes, without interference from other jobs
+
+--ntasks=16 --ntasks-per-node=2 : For 16 processes distributed across 8 nodes (2 processes per node)
+--ntasks=16 --ntasks-per-node=16 : For 16 processes on the same node 
+
+--ntasks=1 --cpus-per-task=16 : For 1 process using 16 cores for multithreading
+
+--ntasks=4 --cpus-per-task=4 : For 4 processes using 4 cores each for multithreading 
+
+</code></pre>
+<hr />
+<h2 id="chain-jobs">Chain Jobs</h2>
+<p>You can organize a sequence of jobs so that one job starts after the completion of another. To do this, submit the first job, note the JobId, and then submit the next one with the following command:</p>
+<pre><code class="language-markdown">sbatch submit.sh --dependency=afterany:&lt;JobId&gt;
+</code></pre>
+<p>In this way, the second job will only start after the completion of the first job.</p>
+<hr />
+<h2 id="rules-and-recommendations">Rules and Recommendations</h2>
 <ul>
-<li>Host hostName </li>
-<li>Hostname 127.0.0.1 </li>
-<li>Port 22</li>
-<li>User UserName </li>
-<li>IdentityFile ~/.ssh/id_rsa_server.pub</li>
+<li>The aguia4 cluster supports up to 160 cores for serial and parallel jobs. For parallel jobs requiring more than 160 and up to 900 cores, use the aguia3 cluster.</li>
+<li>Don't run programs interactively, use the job queue system.</li>
+<li>Read the file /etc/instrucoes.txt for initial commands and tips on how to run jobs.</li>
+<li>The job limit per user is 20 jobs.</li>
+<li>The maximum queue time is 192 hours.</li>
+<li>The maximum number of CPUs per node is 20.</li>
+<li>Questions or problems? Send an email to hpc@usp.br.</li>
 </ul>
-<p>First, once inside the .ssh/, create the file by typing in "touch config", then type in "nano config" so that you can insert the information shown above.</p>
-<p><strong>5</strong>. Move the key you saved on the desktop to the ssh./ folder and rename it the same way you named the information exampled in step 5. Which is, in this case, hostName. By typing in "ls" afterwards, you can check whether the file is truly there.</p>
-<p><strong>6</strong>. Finally, it is done! You no longer have to type in the full SSH port with the server address to access remotely.</p>
-<p><strong>7</strong>. But now you also want to be able to access it without the need of a password. To do this, enter the server.</p>
-<p><strong>8</strong>. Go to ssh and create the file "authorized_keys"</p>
-<p><strong>9</strong>. Meanwhile, open another tab and go to your home server and generate a key by typing in "ssh-keygen". Afterwards, type in "less" so that you can see the entire key. Then copy the key to the destination server by typing in "scp id_rsa.pub hostName:/home/ana", for example.</p>
-<p><strong>10</strong>. Go back to your server (into your home page) and change the name of id_rsa.pub to authorized_keys by typing in "mv id_rsa.pub authorized_keys". Move authorized_keys to the ssh file by typing "mv authorized_keys .ssh".</p>
-<p>There! Now you can enter your server without needing the password or typing in the full SSH port with the server address.</p>
 
 
 
