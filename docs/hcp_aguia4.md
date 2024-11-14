@@ -17,7 +17,7 @@
 - module avail                 : Lists the installed programs
 ```
 
-For more: https://slurm.schedmd.com/pdfs/summary.pdf
+For more: [slurm workload manager](https://slurm.schedmd.com/pdfs/summary.pdf)
 
 **Pay attention!**: Don't use your directory for permanent data storage. After transferring your files, remove them from your directory.
 

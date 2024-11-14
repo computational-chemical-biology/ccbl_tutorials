@@ -1,10 +1,11 @@
 site_name: CCBL Tutorials
-pages:
+nav:
     - Introduction to Linux: linux.md
     - Git: git.md
     - SSH: ssh.md
     - IDE: ide.md
     - Kill zombie processes: zombie.md
+    - Slurm basics: hcp_aguia4.md
 theme:
   name: 'material'
 
